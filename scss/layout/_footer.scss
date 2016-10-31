@@ -1,0 +1,79 @@
+/* footer styles*/ 
+
+footer {
+	margin-top: 1em;
+	display: block;
+	border-top: solid 2px $color-border-top;
+	margin-bottom: 1em;
+	padding-top: 1em;
+}
+
+#top {
+	@extend %textdecoration;
+	color: $color-text-headings;
+	margin-top: -2.25em;
+  
+    @media #{$break-narrow} {
+    display: none;
+    }
+}
+
+#top {
+  &:hover{
+    color:$black;
+  }
+  
+  &:active {
+  color: $color-text-background;
+  }
+}
+
+footer a {
+	@extend %textdecoration;
+	color: $color-text-a;	
+}
+
+footer a:hover{
+	color:$black;
+}	
+
+
+
+#footer,
+#footer-nav {
+   display: flex;
+}
+
+#footer h3 {
+	align-self: flex-start;
+	margin-right: auto;
+	margin-left: 1em;
+}
+
+.footer-nav h3 a{
+  @media #{$break-narrow} {
+	margin-right: 1em;
+  }
+}
+
+footer .footer-nav{
+   @media #{$break-narrow} {
+  @include flex(flex, row, flex-end);
+  }
+}
+
+#top {
+	margin-right: 1em;
+    
+}
+
+#student-name {
+	@media #{$break-narrow} {
+	margin-right: 1em;
+  }
+}
+
+
+
+
+

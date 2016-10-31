@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box; }
+
+#wrapper {
+  min-height: 100vh; }
+
+/* contact information styles*/
+#contact_info {
+  padding-bottom: .25em;
+  margin-top: 5em; }
+
+.skills_info li {
+  color: #456e6e; }
+
+@media (min-width: 768px) {
+  .paragraph {
+    font-size: 1em;
+    margin-bottom: 2em;
+    height: 30px; } }
+@media (min-width: 1025px) {
+  .paragraph {
+    font-size: .8em;
+    margin-bottom: 1em;
+    height: 30px; } }
+
+.skills_info li {
+  list-style-type: none;
+  margin-left: -2em; }
+  @media (min-width: 768px) {
+    .skills_info li {
+      color: #456e6e; } }
+
+.tablet-info {
+  display: none; }
+  @media (min-width: 768px) {
+    .tablet-info {
+      display: inline; } }
+
+.skills_info {
+  margin-top: 3em; }
+
+@media (min-width: 768px) {
+  #columns {
+    column-count: 2;
+    column-count: 2;
+    column-count: 2; } }
+@media (min-width: 1025px) {
+  #columns {
+    column-count: 3;
+    column-count: 3;
+    column-count: 3; } }
+
+/* footer styles*/
+footer {
+  margin-top: 1em;
+  display: block;
+  border-top: solid 2px #ccffdd;
+  margin-bottom: 1em;
+  padding-top: 1em; }
+
+#top {
+  color: #456e6e;
+  margin-top: -2.25em; }
+  @media (min-width: 768px) {
+    #top {
+      display: none; } }
+
+#top:hover {
+  color: #000; }
+#top:active {
+  color: #ccffdd; }
+
+footer a {
+  color: #456e6e; }
+
+footer a:hover {
+  color: #000; }
+
+#footer,
+#footer-nav {
+  display: flex; }
+
+#footer h3 {
+  align-self: flex-start;
+  margin-right: auto;
+  margin-left: 1em; }
+
+@media (min-width: 768px) {
+  .footer-nav h3 a {
+    margin-right: 1em; } }
+
+@media (min-width: 768px) {
+  footer .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; } }
+
+#top {
+  margin-right: 1em; }
+
+@media (min-width: 768px) {
+  #student-name {
+    margin-right: 1em; } }
+
+/*main styles */
+.main-header,
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial; }
+
+@media (min-width: 1025px) {
+  .main-header h1 {
+    align-self: flex-start;
+    margin-left: 2em;
+    margin-right: auto; } }
+
+/* main header and navigation styles*/
+#header_info {
+  background-color: #ccffdd;
+  padding-bottom: 1em; }
+  @media (min-width: 768px) {
+    #header_info {
+      position: relative;
+      padding: 1em; } }
+
+.nav li {
+  list-style-type: none;
+  background-color: #fff;
+  padding: .5em;
+  margin-bottom: .5em;
+  margin-left: -2em;
+  width: 70vw; }
+  @media (min-width: 768px) {
+    .nav li {
+      background-color: transparent;
+      border: none; } }
+
+.nav li a {
+  display: block;
+  color: #000;
+  margin: 0 auto; }
+
+.nav li a:hover {
+  color: #456e6e; }
+.nav li a:active {
+  color: #ccffdd; }
+
+h1 {
+  padding: .25em; }
+
+#first-paragraph {
+  color: #000;
+  margin: 1em;
+  padding-bottom: 1em; }
+  @media (min-width: 768px) {
+    #first-paragraph {
+      position: absolute;
+      left: 5%;
+      margin-top: -10em;
+      max-width: 330px;
+      max-height: 200px;
+      text-align: left; } }
+  @media (min-width: 1025px) {
+    #first-paragraph {
+      font-size: 1.2em;
+      margin-left: -2em; } }
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 450px; } }
+@media (min-width: 1025px) {
+  .nav {
+    position: absolute;
+    right: 2em;
+    top: 1em; } }
+
+#toggle {
+  display: block;
+  margin: auto;
+  width: 100px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px; }
+  @media (min-width: 768px) {
+    #toggle {
+      display: none; } }
+  @media (min-width: 1025px) {
+    #toggle {
+      display: none; } }
+
+#contact_info, .paragraph, .skills_info, .nav li a, h2,
+h3 {
+  text-align: center; }
+
+.main-header,
+.nav, .main-header h1, .nav li, .profile-image {
+  align-self: center; }
+
+#top, footer a, .nav li a {
+  text-decoration: none; }
+
+.paragraph {
+  margin-left: 1em;
+  margin-right: 1em; }
+
+.profile-image {
+  height: 70%;
+  width: 70%;
+  border: #000 solid 3px; }
+  @media (min-width: 768px) {
+    .profile-image {
+      align-self: flex-end;
+      height: 200px;
+      width: 300px;
+      margin-right: 1em;
+      margin-bottom: 1em; } }
+  @media (min-width: 1025px) {
+    .profile-image {
+      margin-top: 8em;
+      align-self: flex-end;
+      margin-top: -.25em;
+      margin-right: 2em;
+      height: 200px;
+      width: 300px; } }
+
+.picture {
+  height: 80%;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+* {
+  font-family: "Roboto", sans-serif; }
+
+/*# sourceMappingURL=application.css.map */

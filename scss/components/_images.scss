@@ -1,0 +1,33 @@
+
+.profile-image {
+  @include picture(70%, 70%);
+	@extend %align-self;
+  border: $black solid 3px;
+ 
+  
+  @media #{$break-narrow} {
+  align-self: flex-end;
+	height: 200px;
+	width: 300px;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+  @media #{$break-wide} {
+    margin-top: 8em;
+	align-self: flex-end;
+	margin-top: -.25em;
+	margin-right: 2em;
+	height: 200px;
+	width: 300px;
+    }
+	
+}
+
+
+.picture {
+  @include picture(80%, 80%);
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

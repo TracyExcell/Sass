@@ -1,0 +1,65 @@
+
+/* contact information styles*/ 
+
+#contact_info {
+	
+	@extend %centered;
+	padding-bottom: .25em;
+	margin-top: 5em;	
+}
+
+.skills_info li {
+	
+	color: $color-text-headings;
+}
+
+
+.paragraph {
+	@extend %centered;
+  @extend %paragraphs;
+    
+  @media #{$break-narrow} {
+  font-size: 1em;
+	margin-bottom: 2em;
+	height: 30px;
+    }
+    
+  @media #{$break-wide} {
+  font-size: .8em;
+	margin-bottom: 1em;
+	height: 30px;
+    }
+}
+   
+
+
+.skills_info li {
+	list-style-type: none;
+	margin-left: -2em;
+    
+  @media #{$break-narrow} {
+	color: #456e6e;
+        } 
+    }
+	
+.tablet-info {
+	display: none;
+    
+ @media #{$break-narrow} {
+ display: inline;
+    }
+}
+
+.skills_info {
+	margin-top: 3em;
+    @extend %centered;
+}
+
+#columns {
+    @media #{$break-narrow} {
+    @include column (2,2,2);
+	}
+     @media #{$break-wide} {
+     @include column (3,3,3);
+    }
+}

@@ -1,0 +1,25 @@
+//picture mixin
+
+@mixin picture ($height: null, $width: null){
+    
+  height: $height;
+	width: $width;	
+}
+    
+ //column count mixin  
+    
+    
+ @mixin column ($-webkit-column-count: null, $-moz-column-count: null,   $column-count: null){
+  
+   column-count: $-webkit-column-count;
+   column-count: $-moz-column-count;
+   column-count: $column-count;
+}
+          
+//flex mixin
+
+@mixin flex ($display, $flex-direction: null, $justify-content: null){
+  display: $display;
+  flex-direction: $flex-direction;
+	justify-content: $justify-content;	
+}
